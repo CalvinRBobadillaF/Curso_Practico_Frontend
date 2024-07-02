@@ -1,0 +1,175 @@
+:root {
+    --background: #e9ecef;
+    --text: #212529;
+    --inputs: #6c757d;
+--button: #343a40;
+--text-input-field: #F7F7F7;
+--card: #ced4da;
+--sm: 14px;
+    --md: 16px;
+    --lg: 18px
+}
+
+*{
+margin: 0;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.login {
+ display: grid;
+place-items: center;
+
+width: 100%;
+height: 100vh;
+
+font-family: 'Quicksand', sans-serif;
+background-color: var(--background);
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-nav img {
+    padding: 10px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--background);
+    
+    
+    }
+
+.text {
+    color: var(--text);
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 700;
+    margin-top: 20px;
+    
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    }
+
+    .label {
+        margin-top: 20px;
+        font-weight: 600;
+        
+        }
+input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--inputs);
+    border: none;
+    
+}
+
+.create {
+   
+    margin: 10px;
+     padding: 18px;
+    border-radius: 10px;
+    color: var(--button);
+    background-color: transparent;
+    border: 1px solid var(--button);
+    font-weight: 700;
+    font-size: var(--sm);
+    
+    border-color: green;
+    
+}   
+
+@media (max-width: 640px) {
+
+    
+ }
+ .create {
+   
+    
+     padding: 18px;
+    border-radius: 10px;
+    color: var(--button);
+    background-color: transparent;
+    border: 1px solid var(--button);
+    font-weight: 700;
+    font-size: var(--sm);
+    border-color: green;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+    width: calc(100% - 38px);
+    margin-left: 8px;
+    
+}   
+ 
+ form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    padding: 8px;
+    background-color: var(--background);
+    
+    
+    }
+
+}
+
+
+
+/*#email {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--inputs);
+    border: none;
+    
+    }
+    #password {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--inputs);
+    border: none;
+}*/
+
+/*.logo {
+width: 150px;
+justify-self: center;
+display: none;
+margin-bottom: -10px;
+}*/
+
+ /*display: grid;
+    place-items: center;*/
+
+   /* .forgot {
+    color: green;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}*/
+/*
+.Login-button {
+padding: 18px;
+border-radius: 10px;
+color: whitesmoke;
+background-color: var(--button);
+margin-top: 40px;
+font-weight: bold;
+border: none;
+font-size: var(--md);
+}

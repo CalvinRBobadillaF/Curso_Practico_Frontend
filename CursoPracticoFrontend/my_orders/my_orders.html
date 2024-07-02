@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .MainP {
+           margin-top: 13px;
+        }
+        .nav {
+            background-color: var(--text-input-field);
+            display: flex;
+            justify-content: space-between;
+            
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        .MainP {
+            font-weight: bold;
+            
+        }
+
+        .title {
+            margin-bottom: 20px;
+            font-weight: bold;
+            display: none;
+        }
+        .main-order-info {
+            width: 100%;
+        }
+        .main-order-info .order-item {
+            background-color: var(--very-light-pink);
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        .nav img {
+            padding: 10px;
+        }
+        .secundary-container {
+            margin: 20px;
+            font-size: var(--lg);
+        }
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .order-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .order-info p {
+            margin: 5px 0;
+        }
+        .order-price {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        @media (min-width: 640px) {
+
+            .main-container {
+                display: grid;
+                place-items: center;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .secundary-container {
+                width: 400px;
+                margin-bottom: 100px;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .title {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="main-nav">
+            <nav class="nav">
+                <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_menu.svg" alt="">
+                <p class="MainP">My orders</p>
+                <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_shopping_cart_notification.svg" alt="">
+            </nav>
+        </div>
+        <div class="secundary-container">
+            <h1 class="title">My orders</h1>
+            <div class="main-order-info">
+            <div class="order-item" >
+                <div class="order-info">
+                    <p>04.25.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 600.00</p>
+                </div>
+            </div>
+        </div>
+                
+            <div class="order-item">
+                <div class="order-info">
+                    <p>04.25.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 120.00</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-info">
+                    <p>02.20.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 120.00</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-info">
+                    <p>02.10.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 120.00</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-info">
+                    <p>01.09.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 120.00</p>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-info">
+                    <p>01.08.2021</p>
+                    <p>6 articles</p>
+                </div>
+                <div class="order-price">
+                    <p>$ 120.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

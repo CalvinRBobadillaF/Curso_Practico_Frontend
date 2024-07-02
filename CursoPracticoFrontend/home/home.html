@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<style>
+ * {
+        margin: 0;
+        
+    }
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+    }
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+    }
+
+.nav {
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+
+    .Secondary-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+        font-weight: bold;
+    }
+        
+    
+    .secondary-nav {
+        display: flex;
+        flex-direction: row;
+       align-items: center;
+       font-size: var(--md);
+       font-weight: 500;
+    }
+    .secondary-nav p {
+        margin: 7px;
+        
+    }
+    .secondary-nav img {
+        margin: 10px;
+        
+    }
+    .terciary-nav {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .terciary-nav p {
+        padding: 10px;
+    }
+
+    .terciary-nav img {
+        margin: 5px;
+    }
+    .order {
+        display: none;
+    }
+    .product-grid  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    
+    margin: 20px;
+    
+    height: auto;
+    
+}
+
+.product-card {
+    background-color: var(--white);
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: start;
+    padding: 1px;
+}
+.price {
+    font-weight: bold;
+}
+.product-card  {
+        border-radius: 30px;
+        width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    background-color: white;
+    margin-right: 7px;
+    
+}
+
+.main-image {
+    background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 1px;
+    }
+    .cart_image {
+        background-color: white;
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+        
+    }
+    .cart_image p {
+        display: inline;
+        background-color: white;
+        
+    }
+
+    .cart_image img {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .parrafos {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (max-width: 600px) {
+     
+    
+    .secondary-nav  img{
+        display: none;
+    }
+    .terciary-nav {
+        display: none;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+    }
+    .main-nav img {
+        padding: 10px;
+        
+    }
+
+    .search {
+        width: 95vw;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 8px;
+        background-color: var(--text-input-field);
+        border: none;
+        display: block;
+    }
+
+    .Secondary-nav  {
+        background-color: white;
+        box-shadow: none;
+        margin-top: 1px;
+    }
+
+    .secondary-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 9px;
+        
+        
+    }
+
+    .input2 {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .product-grid  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    
+    margin: 8px;
+    
+    height: auto;
+    
+}
+
+
+
+
+    .product-card {
+    background-color: var(--white);
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: start;
+    padding: 1px;
+}
+
+  
+  .main-image {
+    background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 1px;
+    }
+    .cart_image {
+        background-color: white;
+        display: flex;
+        
+        justify-content: space-between;
+        
+    }
+    .cart_image p {
+        display: inline;
+        background-color: white;
+        
+    }
+
+    .cart_image img {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .parrafos {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+</style>
+<body>
+    <div class="main-nav">
+    <nav class="nav">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_menu.svg" alt="">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\logo_yard_sale.svg" alt="">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_shopping_cart_notification.svg" alt="">
+    </nav>
+</div>
+    <div>
+        <form action="/">
+            <input type="search" placeholder="search product" class="search">
+        </form>
+    </div>
+
+    <div class="Secondary-nav">
+        <nav class="secondary-nav">
+            <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\logo_yard_sale.svg" alt="">
+            <p>All</p>
+            <p>clothes</p>
+            <p>Electronics</p>
+            <p>Furniture</p>
+            <p>Toys</p>
+           
+        </nav>
+        <div class="terciary-nav">
+            <p class="sign-in">sign in</p>
+            <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_shopping_cart_notification.svg" alt="">
+        </div>
+    </div>
+    <div class="input2">
+        <label for="text" ></label>
+    <input type="text" class="order" placeholder="search">
+    </div>
+    <section class="product-grid">
+        
+        <div class="product-card">
+            <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+            <div class="cart_image">
+                <div class="parrafos">
+            <p class="price">$120.00</p>
+            <p class="item-name">retro-refrigerator</p>
+        </div>
+            <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+        
+        </div>
+        </div>
+        
+
+            <div class="product-card">
+                <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+                <div class="cart_image">
+                    <div class="parrafos">
+                <p class="price">$120.00</p>
+                <p class="item-name">retro-refrigerator</p>
+            </div>
+                <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+            
+            </div>
+        </div>
+            <div class="product-card">
+                <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+                <div class="cart_image">
+                    <div class="parrafos">
+                <p class="price">$120.00</p>
+                <p class="item-name">retro-refrigerator</p>
+            </div>
+                <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+            
+            </div>
+            </div>
+
+        
+            <div class="product-card">
+                <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+                <div class="cart_image">
+                    <div class="parrafos">
+                <p class="price">$120.00</p>
+                <p class="item-name">retro-refrigerator</p>
+            </div>
+                <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+            
+            </div>
+        </div>
+
+            
+        <div class="product-card">
+            <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+            <div class="cart_image">
+                <div class="parrafos">
+            <p class="price">$120.00</p>
+            <p class="item-name">retro-refrigerator</p>
+        </div>
+            <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+        
+        </div>
+    </div>
+
+        
+    <div class="product-card">
+        <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+        <div class="cart_image">
+            <div class="parrafos">
+        <p class="price">$120.00</p>
+        <p class="item-name">retro-refrigerator</p>
+    </div>
+        <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+    
+    </div>
+</div>
+            
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+
+        
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+            
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+            
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+
+        
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+            
+<div class="product-card">
+    <img class="main-image" src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\favicon_yard_sale.svg" alt="">
+    <div class="cart_image">
+        <div class="parrafos">
+    <p class="price">$120.00</p>
+    <p class="item-name">retro-refrigerator</p>
+</div>
+    <img  src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\bt_add_to_cart.svg" alt="">
+
+</div>
+</div>
+
+
+        
+    </div>
+</section>
+</body>
+</html>

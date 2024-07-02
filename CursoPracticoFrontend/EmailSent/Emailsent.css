@@ -1,0 +1,127 @@
+:root {
+    --background: #e9ecef;
+    --text: #212529;
+    --inputs: #6c757d;
+--button: #343a40;
+--text-input-field: #F7F7F7;
+--card: #ced4da;
+}
+
+*{
+    margin: 0;
+}
+
+.login {
+display: grid;
+place-items: center;
+
+width: 100%;
+height: 100vh;
+
+font-family: Arial, Helvetica, sans-serif;
+background-color: var(--background);
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 300px;
+
+    background-color: var(--background);
+    border-radius: 10px;
+
+    padding: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+    padding: 50px;
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--text);
+    
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: -10px;
+
+    color: var(--text);
+    font-weight: 500;
+    font-size: 16px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 10px;
+}
+.label {
+    margin-top: 20px;
+    font-weight: 600;
+   font-size: 16px;
+}
+.img2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen verticalmente */
+    
+    
+}
+.img2 img {
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+}
+.Submit-button{
+    padding: 18px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: var(--button);
+    margin-top: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.forgot {
+    color: black;
+    display: flex;
+    
+    padding: 20px;
+    font-size: 16px;
+}
+
+.forgot .resend {
+    color: green; /* Color del texto "Resend" */
+    margin-left: 5px;
+    font-weight: bold; /* Opcional: para hacer el texto "Resend" en negrita */
+}
+
+.sign {
+    padding: 18px;
+    border-radius: 10px;
+    color: var(--button);
+    background-color: transparent;
+    border: 1px solid var(--button);
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 70px; /* Empuja el botón hacia abajo */
+    border-color: green;
+}

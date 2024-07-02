@@ -1,0 +1,87 @@
+:root {
+    --background: #e9ecef;
+    --text: #212529;
+    --inputs: #6c757d;
+--button: #343a40;
+--text-input-field: #F7F7F7;
+--card: #ced4da;
+--sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.login {
+display: grid;
+place-items: center;
+
+width: 100%;
+height: 100vh;
+
+font-family: 'Quicksand', sans-serif;
+background-color: var(--background);
+}
+.form-container {
+display: grid;
+grid-template-rows: auto 1fr auto;
+
+width: 300px;
+}
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+
+}
+.title {
+    color: var(--text);
+    margin-bottom: 0;
+    font-size: var(--lg);
+    text-align: center;
+    font-weight: 700;
+}
+
+.subtitle {
+text-align: center;
+color: var(--text);
+font-size: var(--md);
+font-weight: 300;
+margin-bottom: 0;
+}
+.form {
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 10px;
+}
+.label {
+margin-top: 20px;
+font-weight: 600;
+
+}
+#password {
+    padding: 10px;
+border-radius: 5px;
+background-color: var(--inputs);
+border: none;
+
+}
+#new-password {
+    padding: 10px;
+border-radius: 5px;
+background-color: var(--inputs);
+border: none;
+}
+.primary-button-login-button {
+padding: 18px;
+border-radius: 15px;
+color: whitesmoke;
+background-color: var(--button);
+margin-top: 25px;
+font-weight: bold;
+border: none;
+}

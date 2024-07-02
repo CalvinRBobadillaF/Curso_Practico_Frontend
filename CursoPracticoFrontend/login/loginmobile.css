@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+:root {
+    --background: #e9ecef;
+    --text: #212529;
+    --inputs: #ced4da;
+--button: #343a40;
+--text-input-field: #F7F7F7;
+--card: #ced4da;
+}
+
+.login {
+    display: grid;
+    align-items: flex-start;
+    
+    width: 100%;
+    height: 100vh;
+    
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--background);
+    padding-top: 10px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;   
+    background-color: var(--background);
+    border-radius: 10px;
+    
+    padding: 0;
+    
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    padding-bottom: 60px;
+    
+
+}
+    .title {
+        color: var(--text);
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+    }
+
+   .subtitle {
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 18px;
+   }
+   .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+   }
+   .label {
+    margin-top: 20px;
+    font-weight: 600;
+    
+   
+   }
+   #email {
+    padding: 14px;
+    border-radius: 5px;
+    background-color: var(--inputs);
+    border-color: var(--inputs);
+   border: none;
+    
+   }
+   #password {
+    padding: 14px;
+    border-radius: 5px;
+    background-color: var(--inputs);
+    border: none;
+   }
+   .login-button {
+    padding: 18px;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: var(--button);
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+   }
+
+   .forgot {
+    color: green;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sign {
+    padding: 18px;
+    border-radius: 10px;
+    color: var(--button);
+    background-color: transparent;
+    border: 1px solid var(--button);
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 200px; /* Empuja el botón hacia abajo */
+    border-color: green;
+}

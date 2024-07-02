@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>account</title>
+</head>
+<style>
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+    }
+
+ body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+
+}
+
+.login {
+    display: grid;
+    place-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    
+}
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-input-field);
+    
+}
+.main-nav img {
+    padding: 10px;
+}
+.form-container {
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    
+}
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+} 
+@media (max-width: 640px) 
+    
+{   
+    
+
+.login {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    
+}
+.form-container {
+    width: 95%;
+    overflow: hidden;
+    
+}
+ 
+.primary-button {
+    width: 95%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+        
+}
+}
+ 
+</style>
+<body>
+    <nav class="main-nav">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_menu.svg" alt="">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\assets\logo_yard_sale.svg" alt="">
+        <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_shopping_cart_notification.svg" alt="">
+    </nav>
+    <div class="login">
+        
+        <div class="form-container">
+            
+            <h1 class="title">My account</h1>
+
+            <form action="/" class="form">
+                <label for="name" class="label">name</label>
+                <input type="text" id="text" placeholder="***********" class="input">
+                <label for="email" class="label">Email</label>
+                <input type="email" id="email" placeholder="********" class="input">
+                <label for="password" class="label">password</label>
+                <input type="password" id="password" placeholder="***********" class="input">
+                <div class="Mbutton">
+                    <input type="submit" value="Save" class="primary-button ">
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+        
+    
+</body>
+</html>

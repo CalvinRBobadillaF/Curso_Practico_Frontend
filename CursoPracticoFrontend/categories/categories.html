@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .close-icon {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .close-icon img {
+            padding: 10px;
+        }
+        .lists {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+        }
+        .lists ul {
+            list-style: none;
+            padding: 0;
+            padding-bottom: 40px;
+            margin-left: 30px;
+            margin-top: 0;
+        }
+        .lists a {
+            text-decoration: none;
+            margin-top: 0;
+            color: var(--black);
+            font-weight: bold;
+        }
+        .sign-in {
+            margin: 20px;
+            text-align: start;
+        }
+        .sign-in a {
+            text-decoration: none;
+            color: var(--hospital-green);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div>
+            <div class="close-icon">
+                <figure>
+                    <img src="C:\Users\punto laptop\Desktop\CursoPracticoFrontend\icons\icon_close.png" alt="">
+                </figure>
+            </div>
+            <div class="lists">
+                <ul>
+                    <li>
+                        <a href="/">CATEGORIES</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">All</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">Clothes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">Electronics</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">Furnitures</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">Toys</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">Others</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sign-in">
+            <a href="/">Log in</a>
+        </div>
+    </section>
+</body>
+</html>
