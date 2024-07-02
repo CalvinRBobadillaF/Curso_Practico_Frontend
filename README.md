@@ -6,5 +6,8 @@ Este proyecto creo que se quedara asi para siempre debido a que basicamente lo t
 Por ultimo, si se me escapo algo (algun archivo mal, diseños raros etc) si avisa de ello me encarga de resolverlo (aunque no creo que haya algo mal) y eso seria todo.
 
 
+Nota: La razon de porque el css esta junto con el html y no separado, es debido a que a la hora de usar la libreria de react, tengo entendido que lo mejor es tenerlo junto, de todas maneras, aunuque mantener el css separado es buena practica, en este contexto, se puede quedar asi.
+
+
 
 Made by CalvinR BobadillaF
